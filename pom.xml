@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>intelligence-nfs-microservice</groupId>
+    <artifactId>intelligence-nfs-microservice</artifactId>
+    <name>intelligence-nfs-microservice</name>
+    <packaging>jar</packaging>
+    <version>0.1.0-SNAPSHOT</version>
+    <description>Intelligence microservice for NFS folder management</description>
+
+    <developers>
+        <developer>
+            <id>intelligence</id>
+            <name>Stratio Intelligence Team</name>
+            <email>intelligence@stratio.com</email>
+        </developer>
+    </developers>
+
+    <parent>
+        <groupId>com.stratio.architecture</groupId>
+        <artifactId>stratio-microservices-parent</artifactId>
+        <version>0.3.0-6a6f01a</version>
+    </parent>
+
+    <properties>
+        <jcraft.version>0.1.54</jcraft.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.jcraft/jsch -->
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>${jcraft.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
