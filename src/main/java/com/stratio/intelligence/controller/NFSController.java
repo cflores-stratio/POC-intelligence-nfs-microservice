@@ -40,9 +40,9 @@ public class NFSController {
             String commandSetPermissions = "chmod 775 " + ROOT_PATH + userWorkspaceFolder;
             String commandSetOwnership = "chown " + username + " " + ROOT_PATH + userWorkspaceFolder;
             String host = "paas-nfs.labs.stratio.com";
-            String user = "root";
+            String user = "stratio";
             Integer port = 22;
-            String password = "stratio";
+            String password = "****";
 
             // init configuration of connection session
             JSch jsch = new JSch();
